@@ -1,0 +1,23 @@
+## spin up box with gam and gyb working
+
+## check for users in Terminated OU, check their last sign in date
+
+
+gam print users query "orgUnitPath='/Terminated'" fields lastLoginTime
+
+##find a way to grab users whose meet the parameters, maybe some if else statement?
+
+if
+        lastLoginTime < 60 days ignore
+
+
+else
+        list emails
+
+
+##take name as variable
+
+## run gyb command
+
+gyb --email $UserEmail --service-account --memory-limit 100
+
