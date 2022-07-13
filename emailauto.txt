@@ -21,3 +21,9 @@ else
 
 gyb --email $UserEmail --service-account --memory-limit 100
 
+
+## sync to s3 bucket
+
+aws s3 cp c:/path bucket
+
+##delete all data, kill server
